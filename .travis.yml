@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+- "node"
+
+install:
+- npm install -g stylint
+
+script:
+- node --version
+- npm --version
+- stylint --version
+- stylint SashaStylint.styl
