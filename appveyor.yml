@@ -1,0 +1,9 @@
+install:
+- cinst nodejs -y
+- npm install -g stylint
+
+build_script:
+- node --version
+- npm --version
+- stylint --version
+- stylint SashaStylint.styl
